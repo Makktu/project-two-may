@@ -1,13 +1,13 @@
 import {View, Text, StatusBar, ScrollView} from 'react-native';
 import React from 'react';
-import FlatCards from './src/components/FlatCards';
+import BasicCard from './src/components/BasicCard';
 
 const App = () => {
   return (
     <View style={{backgroundColor: '#000108', height: '100%'}}>
       <StatusBar backgroundColor={'#000108'} />
       <ScrollView>
-        <FlatCards />
+        <BasicCard />
       </ScrollView>
     </View>
   );

@@ -1,16 +1,20 @@
 import {StyleSheet, Text, View, FlatList} from 'react-native';
 import React from 'react';
+import MyText from './MyText';
 
-export default function FlatCards() {
+export default function BasicCard() {
+  // *
+  const color1 = 'red';
+  const color2 = 'green';
+  const color3 = 'yellow';
+  // *
   return (
     <View>
-      <Text style={styles.headerText}>FlatCards</Text>
+      <MyText content="Basic Card" size={28} thisColor="whitesmoke" />
       <View style={styles.flatDisplayStyle}>
-        <Text style={[styles.cardStyle, {backgroundColor: 'red'}]}>Red</Text>
-        <Text style={[styles.cardStyle, {backgroundColor: 'green'}]}>
-          Green
-        </Text>
-        <Text style={[styles.cardStyle, {backgroundColor: 'yellow'}]}>
+        <Text style={[styles.cardStyle, {backgroundColor: color1}]}>Red</Text>
+        <Text style={[styles.cardStyle, {backgroundColor: color2}]}>Green</Text>
+        <Text style={[styles.cardStyle, {backgroundColor: color3}]}>
           Yellow
         </Text>
       </View>
