@@ -12,9 +12,10 @@ const App = () => {
       <ScrollView>
         <BasicCard />
         <ElevatedCards />
+        <ContactList />
+
         <FancyCard />
       </ScrollView>
-      <ContactList />
     </View>
   );
 };
